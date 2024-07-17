@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <!-- title -->
+    <title>Transaction control</title>
+</head>
+
+<body class="bg-dark">
+    <!-- table -->
+    <div class="container my-5">
+        <div class="filter d-flex gap-5 my-5" id="filter">
+            <input type="search" class="form-control bg-transparent text-white" id="name"
+                placeholder=" Search by customer name">
+            <input type="search" class="form-control bg-transparent text-white" id="amount"
+                placeholder="Search by transaction amount">
+        </div>
+
+
+        <table class="table text-center table-dark table-hover table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Amount</th>
+                </tr>
+            </thead>
+            <tbody class="" id="tableRow">
+
+            </tbody>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <canvas id="myChart" class="w-50 my-5 h-50 mx-auto"></canvas>
+
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
